@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #3B3B3B;
+}
+
+.content{
+    grid-area: content;
+    background-color: #f9faf5;
+    color: #3B3B3B;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+     
+}
+
+p{
+    text-align: center;
+    width: 600px;
+    color: #6c6c6c;
+}
+
+img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background: linear-gradient(to right,
+    #F96B8E,
+    #DB67E4,
+    #827DFD);
+    justify-content: center;
+}
+
+.footer{
+    grid-area: footer;
+    background: #E4E4E4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+    font-size: 1.5em;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "sidebar"
+        "content"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 800px 250px;
+}
+
+.content,
+.sidebar,
+.footer{
+    padding: 1em;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav li{
+    list-style: none;
+    padding: 1em 0;
+}
+
+nav li a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav li a:hover{
+    color: black;
+}
+
+.hero{
+    max-width: 960;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h1{
+    font-size:2em;
+    font-weight: 300;
+    color: #373d46;
+}
+
+.hero p{
+    font-weight: 300;
+    line-height: 1.8em;
+    color: #98a0ad;
+}
+
+.action-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background: #867bfb;
+    padding:0.5em 2em;
+    border-radius: 40px;
+    margin: 1em 0;
+    transition: 0.3s;
+}
+
+.footer img{
+    height: 100px;
+    width: 150px;
+    color: #3b3b3b;
+}
+
+@media (min-width: 1040px) {
+    .container{
+        grid-template-areas: 
+            "sidebar content"
+            "sidebar footer";
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .sidebar{
+        background: linear-gradient(
+        #F96B8E,
+        #DB67E4,
+        #827DFD);
+        padding-top: 3em;
+    }
+    .hero{
+        text-align: left;
+        margin: 2em auto;
+    }
+    .hero img{
+        display: flex;
+        justify-content: right;
+        float: right;
+    }
+    .hero h1{
+        font-size:3em;
+    }
+    .hero p{
+        width: 60%;
+    }
+
+}
+
+
+
+
