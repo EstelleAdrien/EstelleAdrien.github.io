@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+html{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Nunito', sans-serif;
     color: #3B3B3B;
+    margin: 0;
+    padding: 0;
 }
 
 .content{
@@ -84,14 +91,14 @@ nav li{
 }
 
 nav li a{
-    color: white;
+    color: #fff;
     font-weight: 700;
     text-decoration: none;
     transition: 0.3s;
 }
 
 nav li a:hover{
-    color: black;
+    color: #3B3B3B;
 }
 
 .hero{
@@ -117,7 +124,7 @@ nav li a:hover{
     text-decoration: none;
     color: white;
     font-weight: 700;
-    background: #867bfb;
+    background: #827DFD;
     padding:0.5em 2em;
     border-radius: 40px;
     margin: 1em 0;
@@ -145,9 +152,9 @@ nav li a:hover{
     }
     .sidebar{
         background: linear-gradient(
-        #F96B8E,
-        #DB67E4,
-        #827DFD);
+            #F96B8E,
+            #DB67E4,
+            #827DFD);
         padding-top: 3em;
     }
     .hero{
