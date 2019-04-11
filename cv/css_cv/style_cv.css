@@ -1,70 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
-/*html{
-    height: 100%;
-    overflow: hidden;
-}
-
-body{
-    color: #170B3B;
-    margin: 0;
-    padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: 'Noto Serif', serif;
-}
-
-header{
-    box-sizing: border-box;
-    min-height: 100vh;
-    padding: 30vw 0 5vw;
-    position: relative;
-    transform-style: inherit;
-    width: 100vw;
-}
-
-header h1{
-    margin-top: -100px;
-    font-size: 80px;
-}
-
-header p{
-    font-size: 28px;
-    margin: 0;
-    padding: 0;
-}
-
-header, header:before{
-    background: 50% 50% / cover;
-}
-
-header::before{
-    bottom: 0;
-    content:"";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    background-image: url("../img_cv/city.jpg");
-    background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(2);
-    z-index: -1;
-    min-height: 100vh;
-}
-
-header * {
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    text-align: center;
-    margin: 0;
-    padding: 1em 0;
-}*/
-
 body, html{
     height: 100%;
     margin: 0;
@@ -105,13 +40,19 @@ body, html{
 }
 
 .section-light{
-    background-color: #f4f4f4;
+    background-color: #fff;
     color:#666;
 }
 
+.section-light p{
+    color:#999;
+}
+
 .section-dark{
-    background-color: #f4f4f4;
+    background-color: #fff;
     color:#666;
+    margin: 0;
+    padding: 0;
 }
 
 .ptext{
@@ -127,4 +68,39 @@ body, html{
 
 .pimg1 p{
     font-size: 16px;
+}
+
+.section1 img{
+    margin: 0;
+    padding: 0;
+}
+
+.section1 p{
+    color: #999;
+}
+
+.section2 img{
+    padding: 20px;
+}
+
+.section2 p{
+    color: #999;
+}
+
+.section3 img{
+    padding: 30px;
+}
+
+.section3 p{
+    color: #999;
+}
+
+.para1{
+    margin: 0;
+    padding: 0;
+}
+
+.para1 h3{
+    margin: 0;
+    padding: 0;
 }
